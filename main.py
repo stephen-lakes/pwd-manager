@@ -10,27 +10,37 @@ def check_existence():
 
 def append_new():
     # This function will append new password to the text file.
-    file = open("info.txt", 'a')
+    try:
 
-    print()
-    print()
+        file = open("info.txt", 'a')
+   
+    except:
+        print("Oops something went wrong !!!!, please try again")
+    
+    else:
+        print()
+        print()
 
-    username = input("Please enter the username: ")
-    password = input("Please enter the password: ")
-    website = input("Please enter the website: ")
+        username = input("Please enter the username: ")
+        password = input("Please enter the password: ")
+        website = input("Please enter the website: ")
 
-    print()
-    print()
+        print()
+        print()
 
-    usrnm = "Username: " + username + username + "\n"
-    pwd = "Password: " + password + "\n"
-    web = "Website: " + website + "\n"
+        usrnm = "Username: " + username + username + "\n"
+        pwd = "Password: " + password + "\n"
+        web = "Website: " + website + "\n"
 
-    file.write("---------------------------------------------")
-    file.write("\n")
-    file.write(usrnm)
-    file.write(pwd)
-    file.write(web)
+        file.write("---------------------------------------------")
+        file.write("\n")
+        file.write(usrnm)
+        file.write(pwd)
+        file.write(web)
+
+    finally:
+        file.close()
+
 
 
 def main():
