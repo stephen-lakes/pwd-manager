@@ -1,40 +1,47 @@
 import os.path
 
+
 def check_existence():
     if os.path.exists('info.txt'):
         pass
     else:
-        file = open('info.txt', 'w')
+        #file = open('info.txt', 'w')
+        open_file(file_mode='w')
         file.close()
 
 
+def open_file(file_mode):
+    file = open('info.txt', mode=file_mode)
+    return file
+
+
 def append_new():
-    # This function will append new password to the text file.
+    # This function will append new password data to the database.
     try:
 
-        file = open("info.txt", 'a')
+        file = open_file(file_mode='a')
    
     except:
         print("Oops something went wrong !!!!, please try again")
     
     else:
-        print()
-        print()
 
         username = input("Please enter the username: ")
+        email    = input("Please enter the email: ")
         password = input("Please enter the password: ")
-        website = input("Please enter the website: ")
+        website  = input("Please enter the website: ")
 
         print()
-        print()
 
-        usrnm = "Username: " + username + username + "\n"
-        pwd = "Password: " + password + "\n"
-        web = "Website: " + website + "\n"
+        usrnm = "Username: " + username + "\n"
+        email = "Email   : " + email + "\n"
+        pwd   = "Password: " + password + "\n"
+        web   = "Website : " + website + "\n"
 
         file.write("---------------------------------------------")
         file.write("\n")
         file.write(usrnm)
+        file.write(email)
         file.write(pwd)
         file.write(web)
 
@@ -43,8 +50,21 @@ def append_new():
 
 
 
+def view_password():
+    file = open('info.txt', 'r')
+    for l in file:
+        print(l)
+
+
 def main():
     check_existence()
-    append_new()
+
+
+    while True:
+        append_new()
+
+        
+
+
 if __name__ == "__main__" :
     main()
