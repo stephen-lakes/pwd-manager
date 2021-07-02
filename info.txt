@@ -1,20 +1,25 @@
 ---------------------------------------------
-Username: lucylucy
-Password: csamora
-Website: facebook
+Username: user1
+Email   : emaili@gmail.com
+Password: samplepwd
+Website : example.com
 ---------------------------------------------
-Username: hanhan
-Password: shaowq
-Website: instagram.com
+Username: stephen
+Email   : steve@gmail.com
+Password: steve
+Website : steve.com
 ---------------------------------------------
-Username: kelvin-12kelvin-12
-Password: 123neweb
-Website: snapchat
+Username: reina
+Email   : reina@aol.com
+Password: reina
+Website : reina.com
 ---------------------------------------------
-Username: markmark
-Password: zuckerberg
-Website: 
+Username: Toks
+Email   : Toks@gmail.com
+Password: etoks
+Website : toks.example.com
 ---------------------------------------------
-Username: stephenstephen
-Password: ijefjdyg2e
-Website: random.com
+Username: oladimeji
+Email   : meji@gmail.com
+Password: mejimeji
+Website : random.site.com

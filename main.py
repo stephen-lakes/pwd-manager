@@ -6,20 +6,20 @@ def check_existence():
         pass
     else:
         #file = open('info.txt', 'w')
-        open_file(file_mode='w')
+        file_opener(file_mode='w')
         file.close()
 
 
-def open_file(file_mode):
+def file_opener(file_mode):
     file = open('info.txt', mode=file_mode)
     return file
 
 
-def append_new():
+def add_new_password():
     # This function will append new password data to the database.
     try:
 
-        file = open_file(file_mode='a')
+        file = file_opener(file_mode='a')
    
     except:
         print("Oops something went wrong !!!!, please try again")
@@ -61,7 +61,7 @@ def main():
 
 
     while True:
-        append_new()
+        add_new_password()
 
         
 
