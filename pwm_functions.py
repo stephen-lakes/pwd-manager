@@ -3,9 +3,10 @@ import os.path
 def instruction():
     instruction = """
         /\/\/\ Select one of the following instructions /\/\/\/
-            Choose new to save a new password
-            Choose view to remember previously saved passwords
-            Choose q or quit to exit
+            Choose new to save a new password.
+            Choose view to remember previously saved passwords.
+            Choose q or quit to exit.
+            Choose g to generate a secure password.
         """
     print(instruction)
 
