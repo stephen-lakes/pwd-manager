@@ -1,5 +1,5 @@
+from generate import generate_password
 from pwm_functions import *
-
 
 def main():
     check_existence()
@@ -24,6 +24,10 @@ def main():
         if command == "q" or command == "quit":
             print("BYE!!!")
             break
+
+        if command == "g" or command == "":
+            prompt = int(input("How long do you want your password to be? "))
+            print("Generated password: ", generate_password(prompt))
 
     
 
