@@ -1,6 +1,6 @@
-# pwm-manager
+# password-manager
 
-This project **pwm-manager** is a CLI software written in python to manage a user password data used on different site.
+This project **password-manager** is a CLI software written in python to manage a user password data used on different site.
 
 **Users** need not to disturb themselves trying to remember every password or email used on the internet, by simply logging their details using this piece of software the user will be able to keep track(a record) of important data incase forgotten in the future.
 
