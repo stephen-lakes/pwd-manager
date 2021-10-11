@@ -8,7 +8,7 @@ For now the data are stored in plain text which is not ideal for security reason
 
 ### How to use this piece of software
 
-+ $ git clone https://github.com/stephen-lakes/pwd-manager
-+ $ python main.py
++ $ `` git clone https://github.com/stephen-lakes/pwd-manager ``
++ $ `` python main.py ``
 
 ### 
