@@ -26,6 +26,7 @@ def file_opener(file_mode):
 
 def add_new_password():
     # This function will append new password data to the database.
+    print("\t\t\tFILL THE FORM BELOW\n")
     try:
 
         file = file_opener(file_mode='a')
