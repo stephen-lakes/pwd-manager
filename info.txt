@@ -1,25 +1,15 @@
 ---------------------------------------------
-Username: user1
-Email   : emaili@gmail.com
-Password: samplepwd
-Website : example.com
+Username: John
+Email   : johnDoe@email.com
+Password: john.Doe
+Website : 123.com
 ---------------------------------------------
-Username: stephen
-Email   : steve@gmail.com
-Password: steve
-Website : steve.com
+Username: Smith
+Email   : jamesSmith@email.com
+Password: james.smith
+Website : abc.com
 ---------------------------------------------
-Username: reina
-Email   : reina@aol.com
-Password: reina
-Website : reina.com
----------------------------------------------
-Username: Toks
-Email   : Toks@gmail.com
-Password: etoks
-Website : toks.example.com
----------------------------------------------
-Username: oladimeji
-Email   : meji@gmail.com
-Password: mejimeji
-Website : random.site.com
+Username: sam
+Email   : samRuben@email.com
+Password: ruben
+Website : xyz.com
