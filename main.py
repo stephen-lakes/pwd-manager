@@ -1,70 +1,31 @@
-import os.path
-
-
-def check_existence():
-    if os.path.exists('info.txt'):
-        pass
-    else:
-        #file = open('info.txt', 'w')
-        file_opener(file_mode='w')
-        file.close()
-
-
-def file_opener(file_mode):
-    file = open('info.txt', mode=file_mode)
-    return file
-
-
-def add_new_password():
-    # This function will append new password data to the database.
-    try:
-
-        file = file_opener(file_mode='a')
-   
-    except:
-        print("Oops something went wrong !!!!, please try again")
-    
-    else:
-
-        username = input("Please enter the username: ")
-        email    = input("Please enter the email: ")
-        password = input("Please enter the password: ")
-        website  = input("Please enter the website: ")
-
-        print()
-
-        usrnm = "Username: " + username + "\n"
-        email = "Email   : " + email + "\n"
-        pwd   = "Password: " + password + "\n"
-        web   = "Website : " + website + "\n"
-
-        file.write("---------------------------------------------")
-        file.write("\n")
-        file.write(usrnm)
-        file.write(email)
-        file.write(pwd)
-        file.write(web)
-
-    finally:
-        file.close()
-
-
-
-def view_password():
-    file = open('info.txt', 'r')
-    for l in file:
-        print(l)
+from pwm_functions import *
 
 
 def main():
     check_existence()
-
+    
 
     while True:
-        add_new_password()
+        instruction()
 
-        
+        command = input("> ").lower().strip()
 
+        if command == "n" or command == "new":
+            condition = True
+            while condition:
+                add_new_password()
+                decision = input("Do you want to save another password(Y/N)? ").lower().strip()
+                if decision in ("n", "no"):
+                    condition = False
+
+        if command == "v" or command == "view":
+            view_password()
+
+        if command == "q" or command == "quit":
+            print("BYE!!!")
+            break
+
+    
 
 if __name__ == "__main__" :
     main()
