@@ -1,5 +1,12 @@
 import os.path
 
+
+def create_database(database_name):
+    '''
+    '''
+    pass
+
+
 def instruction():
     instruction = """
         /\/\/\ Select one of the following instructions /\/\/\/
@@ -7,11 +14,13 @@ def instruction():
             Choose view to remember previously saved passwords.
             Choose q or quit to exit.
             Choose g to generate a secure password.
+            Create database.
         """
     print(instruction)
 
 
 def check_existence():
+    """ Create a database if there is none. """
     if os.path.exists('info.txt'):
         pass
     else:
@@ -26,7 +35,7 @@ def file_opener(file_mode):
 
 
 def add_new_password():
-    # This function will append new password data to the database.
+    # Add new data to the database.
     print("\t\t\tFILL THE FORM BELOW\n")
     try:
 

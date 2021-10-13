@@ -4,7 +4,6 @@ from pwm_functions import *
 def main():
     check_existence()
     
-
     while True:
         instruction()
 
