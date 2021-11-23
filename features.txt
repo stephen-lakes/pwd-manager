@@ -1,0 +1,7 @@
+BACKEND API
+    - Create pwd database, e.g social
+    - Read(View) password
+    - Update pwd database
+    - Delete password
+CLIENT
+    - generate password
