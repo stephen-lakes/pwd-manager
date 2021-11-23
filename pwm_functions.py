@@ -72,8 +72,3 @@ def view_password():
     file = open('info.txt', 'r')
     for l in file:
         print(l)
-
-
-def scramble():
-    ''' shuffle a string '''
-    
